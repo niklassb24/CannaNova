@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Olie — CannaNova</title>
+<meta name="description" content="Kosmetisk CBD-olie fra CannaNova i flere koncentrationer, til hud og hår — dokumenteret indhold og lab-rapport.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  (function () {
+    var saved = localStorage.getItem("cannanova-theme");
+    var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.dataset.theme = theme;
+  })();
+</script>
+</head>
+<body>
+
+<header class="stagebar">
+  <div class="wrap">
+    <a href="index.html" class="logo">Canna<em>Nova</em></a>
+    <nav class="nav" id="siteNav">
+      <a href="topskud.html">Topskud</a>
+      <a href="hash.html">Hash</a>
+      <a href="olie.html">Olie</a>
+      <a href="tilbehor.html">Tilbehør</a>
+      <a href="kurv.html" class="nav-cart">Kurv · 0</a>
+    </nav>
+    <div class="header-icons">
+      <button class="search-toggle" id="searchToggle" aria-label="Søg i sortimentet" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Skift mellem lyst og mørkt tema">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Åbn menu" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Sortiment</p>
+      <h1 style="margin-top:10px;">Olie.</h1>
+      <p>Kosmetisk CBD-olie i flere koncentrationer, til hud og hår. Sælges som kosmetik, ikke som kosttilskud eller fødevare.</p>
+      <div class="page-search">
+        <input type="search" id="productSearch" class="search-input" placeholder="Søg i olie …">
+      </div>
+    </div>
+  </section>
+
+  <section class="products-section" style="padding-block: 30px 90px;">
+    <div class="wrap">
+      <div class="products" id="catalogGrid" data-category="olie"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="stagebar">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="logo">Canna<em>Nova</em></a>
+        <p>Lovlige, dokumenterede CBD-produkter til danske kunder. Ren onlinedrift — ingen fysisk butik endnu.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Sortiment</h4>
+        <ul><li><a href="topskud.html">Topskud</a></li><li><a href="hash.html">Hash</a></li><li><a href="olie.html">Olie</a></li><li><a href="tilbehor.html">Tilbehør</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul><li><a href="blog.html">Blog</a></li><li><a href="kontakt.html">Kontakt</a></li><li><a href="handelsbetingelser.html">Handelsbetingelser</a></li><li><a href="privatlivspolitik.html">Privatlivspolitik</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kundeservice</h4>
+        <ul><li><a href="mailto:kontakt@cannanova.dk">kontakt@cannanova.dk</a></li><li><a href="kurv.html">Mine point</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p class="disclaimer">18+. Produkterne sælges som samleobjekt/duftvare og er ikke beregnet til humant forbrug, rygning eller indtagelse. Alt indhold under 0,2% delta-9-THC.</p>
+      <p class="cvr">CVR XX XX XX XX</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/gates.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
